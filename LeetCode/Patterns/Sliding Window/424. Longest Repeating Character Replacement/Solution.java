@@ -8,7 +8,8 @@ class Solution {
             map.put(s.charAt(r),map.getOrDefault(s.charAt(r),0)+1);
             int max=Collections.max(map.values());
              while((r-l+1)-max>k){
-                map.put(s.charAt(l),map.getOrDefault(s.charAt(l),0)-1);
+            char left=s.charAt(l);
+                map.put(left,map.get(left)-1);
                 l++;
              }
             maxLen=Math.max(max,r-l+1);

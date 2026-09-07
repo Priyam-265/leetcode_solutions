@@ -7,6 +7,7 @@ class Solution {
         for(int r=0;r<n;r++){
             map.put(fruits[r],map.getOrDefault(fruits[r],0)+1);
             while(map.size()>2){
+                if(map.)
                 map.remove(fruits[l]);
                 map.remove(map.getOrDefault(0,r)-1);
                 l++;

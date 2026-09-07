@@ -12,7 +12,7 @@ class Solution {
                 map.put(left,map.get(left)-1);
                 l++;
              }
-            maxLen=Math.max(max,r-l+1);
+            maxLen=Math.max(maxLen,r-l+1);
         }
         return maxLen;
     }
